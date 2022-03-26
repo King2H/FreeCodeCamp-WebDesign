@@ -1,0 +1,26 @@
+<h1 id="title">Survey Form App</h1>
+<p id="description">This is a servey form where any generic user-specific information can be collected.</p>
+<form id="survey-form" action="">
+  <label id="name-label">Your Name: <input type="text" id="name" name="name" placeholder="Full Name" required></label>
+  <label id="email-label">Your Email: <input type="email" id="email" placeholder="Put your Email" required></label>
+  <label id="number-label">Your Age: <input type="number" id="number" min="18" max="80" placeholder="Your Age?" required></label>
+  
+  <!-- Dropdown Selection -->
+  <select name="selection" id="dropdown">
+    <option value="">(select your competence)</option>
+    <option value="1">HTML</option>
+    <option value="2">CSS</option>
+    <option value="3">JS</option>
+  </select>
+  <!-- RadioButtons -->
+  <label><input type="radio" name="experience" value="entry" checked/>Entry</label>
+  <label></label><input type="radio" name="experience" value="intermediate"/>Intermediate</label>
+  <label></label><input type="radio" name="experience" value="expert"/>Expert</label>
+  <!-- CheckBox -->
+  <label><input type="checkbox" value="1" checked>Web Designer</label>
+  <label><input type="checkbox" value="2">BE Developer</label>
+  <label><input type="checkbox" value="3">Data Analyst</label>
+
+  Your Professional Summary: <textarea name="qualification" id="qualification" cols="30" rows="10" placeholder="Put a summary" ></textarea>
+  <button type="submit" id="submit">Submit</button>
+</form>
